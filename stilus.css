@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+main, header, nav, article, footer{
+    border: 1px solid grey;
+}
+main{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header, footer{
+    
+}

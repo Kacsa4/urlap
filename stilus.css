@@ -1,15 +1,61 @@
-*{
+* {
     box-sizing: border-box;
 }
-main, header, nav, article, footer{
+ 
+main,
+header,
+nav,
+article,
+footer {
     border: 1px solid grey;
 }
-main{
+ 
+main {
     max-width: 1000px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+ 
 }
-header, footer{
-    
+ 
+header,
+footer {
+    flex: 0 0 100%;
+}
+ 
+article {
+    flex: 1 1 auto;
+}
+ 
+nav {
+    flex: 0 0 200px;
+}
+ 
+.block {
+    display: flex;
+ 
+}
+ 
+.block label {
+    flex: 0 0 70px;
+    text-align: right;
+    padding-right: 8px;
+ 
+}
+ 
+@media screen and (max-width:400px) {
+    .block {
+        flex-direction: column;
+    }
+ 
+}
+ 
+@media screen and (max-width:400px) {
+    .block label {
+        flex: 0 0 100%;
+        text-align: left;
+        padding-right: 15px;
+ 
+    }
+ 
 }

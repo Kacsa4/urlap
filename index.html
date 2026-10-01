@@ -1,39 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Dévényi Donát</title>
 </head>
+ 
 <body>
     <main>
-        <header><h1>Űrlap</h1></header>
+        <header>
+            <h1>Űrlap</h1>
+        </header>
+ 
         <nav>
             <ul>
-                <li><a href="index.html">Menü</a></li>
-                <li><a href="index.html">Menü</a></li>
-                <li><a href="index.html">Menü</a></li>
-                <li><a href="index.html">Menü</a></li>
+                <li><a href="index.html">Menü 1</a></li>
+                <li><a href="index.html">Menü 2</a></li>
+                <li><a href="index.html">Menü 3</a></li>
             </ul>
         </nav>
+ 
         <article>
-            <form>
-                <div class="block">
-                    <label for="név">Név</label>
-                    <input type="text" name=""nev placeholder="Vezeték név keresztnév">
-                </div> 
-                <div class="block">
-                    <label for="psw">Jelszó</label>
-                    <input type="password" name="psw"nev id="psw">
+            <form action="#" method="post">
+ 
+ 
+                <fieldset>
+                    <legend>Személyes adatok</legend>
+ 
+                    <div class="block">
+                        <label for="nev">Név</label>
+                        <input type="text" name="nev" id="nev" placeholder="Vezetéknév Keresztnév">
+                    </div>
+ 
+                    <div class="block">
+                        <label for="email">E-mail cím</label>
+                        <input type="email" name="email" id="email" placeholder="pelda@email.hu">
+                    </div>
+ 
+                    <div class="block">
+                        <label for="jelszo">Jelszó</label>
+                        <input type="password" name="jelszo" id="jelszo" placeholder="••••••••">
+                    </div>
+                </fieldset>
+ 
+ 
+                <fieldset>
+                    <legend>Nem</legend>
+ 
+                    <div class="block">
+                        <input type="radio" name="nem" id="ffi" value="ferfi" checked>
+                        <label for="ffi">Férfi</label>
+                    </div>
+ 
+                    <div class="block">
+                        <input type="radio" name="nem" id="no" value="no">
+                        <label for="no">Nő</label>
+                    </div>
+                </fieldset>
+ 
+ 
+ 
+                <fieldset>
+                    <legend>Hobbi - többet is kijelölhetsz</legend>
+                    <label for="bic">Bicajozás</label>
+                    <input type="checkbox" name="hobbi" id="bic" value="bicajozas">
+                    <label for="futas">Futás</label>
+                    <input type="checkbox" name="hobbi" id="futas" value="futas">
+                    <label for="olvasas">Olvasás</label>
+                    <input type="checkbox" name="hobbi" id="olvasas" value="olvasas">
+                    <label for="gaming">Videójátékok</label>
+                    <input type="checkbox" name="hobbi" id="gaming" value="gaming">
+                    <label for="utazas">Utazás</label>
+                    <input type="checkbox" name="hobbi" id="utazas" value="utazas">
+ 
+                </fieldset>
+ 
+ 
+                <div class="block actions">
+                    <input type="submit" value="Küldés">
                 </div>
-                
-
-                <label for="email">Email</label>
-                <input type="email" name="email"nev id="email">
-
+ 
             </form>
         </article>
-        <footer><p>Dévényi Donát</p></footer>
     </main>
 </body>
+ 
 </html>
